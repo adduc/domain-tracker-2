@@ -1,0 +1,32 @@
+{
+    "name": "adduc/dt",
+    "authors": [
+        {
+            "name": "John Long",
+            "email": "a@88k.us"
+        }
+    ],
+    "require": {
+        "league/route": "^1.1",
+        "filp/whoops": "^1.1",
+        "adduc/memoize-apc": "dev-master",
+        "silex/silex": "~1.2",
+        "novutec/DomainParser": "dev-master",
+        "novutec/WhoisParser": "dev-master#0ac9d58cd88f96a76bf38c654cebed80fc422c25"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/adduc/WhoisParser"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/AllenJB/DomainParser"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Adduc\\DomainTracker\\": "src/"
+        }
+    }
+}
